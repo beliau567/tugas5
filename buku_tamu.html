@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label, textarea, input, select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #2400ef;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buku Tamu</h1>
+    
+    <form action="#" method="post">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+        
+        <label for="alamat">Alamat Tinggal:</label>
+        <input type="text" id="alamat" name="alamat" required>
+        
+        <label for="sosial_media">Aktif pada Sosial Media:</label>
+        <input type="text" id="sosial_media" name="sosial_media" required>
+        
+        <label for="mengetahui_web">Mengetahui Web ini dari:</label>
+        <input type="text" id="mengetahui_web" name="mengetahui_web" required>
+        
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" required></textarea>
+        
+        <button type="submit">Kirim</button>
+    </form>
+
+    
+    <p><a href="about.html">Kembali ke halaman About</a></p>
+</body>
+</html>
